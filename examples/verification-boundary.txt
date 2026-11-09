@@ -1,0 +1,24 @@
+=== verification boundary (author box) ===
+Date: 2026-11-09 Asia/Shanghai
+Host: Linux x86_64, 8 CPU, ~15 GiB RAM (~10 GiB available), ~110 GiB free disk
+Upstream pin: dsx-ai-factory/nvke v0.23.1 (347baab)
+License: Apache-2.0 (upstream) / MIT (this companion)
+
+Verified on this box:
+- HTTP reachability: GitHub nvke, docs.nvidia.com/nvke, proxy.golang.org, sum.golang.org (200)
+- ghcr.io/v2 and registry.k8s.io/v2 respond 401 (reachable)
+- git shallow clone --branch v0.23.1
+- go mod download of pinned CAPNICo (chart/Chart.yaml present)
+- make -C cli build → nvkectl v0.23.1
+
+NOT verified on this box:
+- Docker Engine / kind / Helm 4 / tilt / kubectl (not installed; apt mirrors returned 500)
+- tpm_vtpm_proxy /dev/vtpmx
+- make -C controller host-up / capd-up
+- tilt up management plane
+- nvkectl create cluster (mock-NICo)
+- workload nodes Ready
+- bare-metal bootstrap + real NICo + node OS image build/hosting
+- GPU / AICR / NVSentinel
+
+Memory note: available RAM ~10 GiB < upstream "12 GiB free" — even with Docker, full stack may OOM here.

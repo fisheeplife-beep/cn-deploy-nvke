@@ -1,0 +1,8 @@
+.env
+.env.*
+!.env.example
+local/.env.tilt
+data/
+*.log
+.DS_Store
+*.kubeconfig

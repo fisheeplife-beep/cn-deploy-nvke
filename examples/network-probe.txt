@@ -1,0 +1,7 @@
+=== network probe 2026-11-09 19:58 CST ===
+GitHub → HTTP 200
+docs.nvidia.com/nvke → HTTP 200
+proxy.golang.org → HTTP 200
+sum.golang.org → HTTP 200
+ghcr.io/v2 → HTTP 401
+registry.k8s.io/v2 → HTTP 401

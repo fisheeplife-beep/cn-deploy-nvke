@@ -1,0 +1,29 @@
+=== smoke-nvkectl 2026-11-09 20:01 CST ===
+nvkectl v0.23.1 (commit: 347baab, built: 2026-11-03T10:48:12-08:00)
+NVKE control-plane CLI
+
+Usage:
+  nvkectl [command]
+
+Available Commands:
+  bootstrap   Bootstrap NVKE clusters from a declarative site spec
+  completion  Generate the autocompletion script for the specified shell
+  config      Manage nvkectl configuration
+  create      Create a resource
+  delete      Delete a resource
+  deprecate   Deprecate a release
+  generate    Generate NVKE configuration files
+  get         Display one or more resources
+  help        Help about any command
+  patch       Patch a resource
+  validate    Validate a file before acting on it
+  version     Print version information
+
+Flags:
+  -h, --help          help for nvkectl
+      --json-logs     Emit logs as JSON
+      --site string   Override the active site for this invocation
+  -v, --verbose       Enable debug logging
+
+Use "nvkectl [command] --help" for more information about a command.
+OK — CLI smoke only. Full mock-NICo / bare-metal paths not covered here.

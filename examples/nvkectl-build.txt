@@ -1,0 +1,18 @@
+=== nvkectl build (tail) ===
+Command: make -C cli build  (upstream v0.23.1)
+Result: success — see nvkectl-version.txt
+go: downloading gopkg.in/evanphx/json-patch.v4 v4.13.0
+go: downloading github.com/emicklei/go-restful/v3 v3.13.0
+go: downloading github.com/go-openapi/swag/mangling v0.29.2
+go: downloading github.com/go-openapi/swag/cmdutils v0.29.2
+go: downloading github.com/go-openapi/swag/fileutils v0.29.2
+go: downloading github.com/go-openapi/swag/conv v0.29.2
+go: downloading github.com/go-openapi/swag/loading v0.29.2
+go: downloading github.com/go-openapi/swag/jsonutils v0.29.2
+go: downloading github.com/go-openapi/swag/netutils v0.29.2
+go: downloading github.com/go-openapi/swag/stringutils v0.29.2
+go: downloading github.com/go-openapi/swag/typeutils v0.29.2
+go: downloading github.com/go-openapi/swag/yamlutils v0.29.2
+go: downloading github.com/go-openapi/swag/pools v0.29.2
+  nvkectl v0.23.1 (commit: 347baab, built: 2026-11-03T10:48:12-08:00)
+make: Leaving directory '/workspace/cn-deploy-nvke/data/upstream-nvke/cli'

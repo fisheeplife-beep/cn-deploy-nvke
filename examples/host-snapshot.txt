@@ -1,0 +1,16 @@
+=== host snapshot 2026-11-09 19:58 CST ===
+uname: Linux x86_64
+cpus: 8
+               total        used        free      shared  buff/cache   available
+Mem:            15Gi       5.5Gi       6.4Gi        97Mi       4.1Gi        10Gi
+Swap:             0B          0B          0B
+/dev/vdb        128G   19G  110G  15% /
+go: go version go1.27.3 linux/amd64
+make: GNU Make 4.4.1
+docker: MISSING
+kind: MISSING
+kubectl: MISSING
+helm: MISSING
+tilt: MISSING
+tpm modules: 
+inotify: n/a

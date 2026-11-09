@@ -1,0 +1,13 @@
+Downloading pinned CAPNICo module…
+CAPNICo → /workspace/cn-deploy-nvke/data/nvke-quickstart-capnico
+wrote controller/tilt_config.json
+wrote controller/.env.tilt (lab passwords — not for production)
+
+Next (on a host with Docker + kind + Helm 4 + tilt):
+  cd /workspace/cn-deploy-nvke/data/upstream-nvke
+  make -C cli build && export PATH="$PWD/cli/bin:$PATH"
+  sudo sysctl -w fs.inotify.max_user_instances=1024   # if needed
+  make -C controller host-up
+  make -C controller capd-up
+  cd controller && tilt up
+Then follow docs/local-eval.md / upstream quickstart-local.md

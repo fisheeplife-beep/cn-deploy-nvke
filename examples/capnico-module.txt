@@ -1,0 +1,2 @@
+CAPNICO=/home/box/go/pkg/mod/github.com/dsx-ai-factory/cluster-api-provider-nico@v0.1.0-rc.2.0.20260929174319-72784d3eaafc
+/home/box/go/pkg/mod/github.com/dsx-ai-factory/cluster-api-provider-nico@v0.1.0-rc.2.0.20260929174319-72784d3eaafc/chart/Chart.yaml
